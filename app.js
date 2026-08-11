@@ -71,11 +71,7 @@ lessonButton.addEventListener(
   "click",
   function() {
 
-    if (
-      !GOOGLE_FORM_URL ||
-      GOOGLE_FORM_URL ===
-        "https://forms.gle/xeAk7bMpydymxJRA7"
-    ) {
+    if (!GOOGLE_FORM_URL) {
 
       alert(
         "Google Form 주소가 설정되지 않았습니다."
@@ -84,11 +80,6 @@ lessonButton.addEventListener(
       return;
     }
 
-
-    /**
-     * Telegram Mini App에서
-     * Google Form 열기
-     */
     tg.openLink(
       GOOGLE_FORM_URL
     );
