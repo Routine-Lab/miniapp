@@ -72,8 +72,7 @@ lessonButton.addEventListener(
   function() {
 
     alert(
-      "학원에 등록한 구글계정으로 입력하셔야 합니다." +
-      GOOGLE_FORM_URL
+      "학원에 등록한 구글계정으로 입력하셔야 합니다."
     );
 
     tg.openLink(
