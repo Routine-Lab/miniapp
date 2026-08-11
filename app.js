@@ -71,14 +71,10 @@ lessonButton.addEventListener(
   "click",
   function() {
 
-    if (!GOOGLE_FORM_URL) {
-
-      alert(
-        "Google Form 주소가 설정되지 않았습니다."
-      );
-
-      return;
-    }
+    alert(
+      "현재 Form 주소:\n" +
+      GOOGLE_FORM_URL
+    );
 
     tg.openLink(
       GOOGLE_FORM_URL
